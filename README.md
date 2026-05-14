@@ -8,15 +8,14 @@ This repository is a collection of state-of-the-art agentic design patterns, fro
 
 <br>
 
-### Worklog
+## Worklog
 
-Running list of what's here !
+Running list of what's here ...
 
-1. **Reflection**  [[`Implementation`](01_reflection.ipynb)]
-   
+1. **Reflection**  [[`Implementation`](01_reflection.ipynb)]<br>   
    Moves from a single-pass generator to a deliberate, multi-step reasoner by critiquing and refining its own work.
 
-<sub><i>More architectures and experiments will be added over time...</i></sub>
+<sub><i>More architectures and experiments will be added over time !</i></sub>
 
 
 
