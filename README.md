@@ -13,6 +13,7 @@ Running list of what's here ...
 1. **Reflection**  [[`Implementation`](01_reflection.ipynb)]<br>Moves from a single-pass generator to a deliberate, multi-step reasoner by critiquing and refining its own work.
 2. **Tool Use**  [[`Implementation`](02_tool_use.ipynb)]<br>Empowers an agent to overcome knowledge cutoffs and interact with the real world by calling external APIs and functions.
 3. **ReAct**  [[`Implementation`](03_ReAct.ipynb)]<br>Dynamically interleaves **Re**asoning ("thought") and **Act**ion ("tool use") in an adaptive loop to solve complex, multi-step problems.
+4. **Planning**  [[`Implementation`](04_planning.ipynb)]<br>Proactively decomposes a complex task into a detailed, step-by-step plan before execution, ensuring a structured and traceable workflow.
 
 <sub><i>More architectures and experiments will be added over time !</i></sub>
 
