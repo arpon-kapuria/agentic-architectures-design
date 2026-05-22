@@ -14,6 +14,7 @@ Running list of what's here ...
 2. **Tool Use**  [[`Implementation`](02_tool_use.ipynb)]<br>Empowers an agent to overcome knowledge cutoffs and interact with the real world by calling external APIs and functions.
 3. **ReAct**  [[`Implementation`](03_ReAct.ipynb)]<br>Dynamically interleaves **Re**asoning ("thought") and **Act**ion ("tool use") in an adaptive loop to solve complex, multi-step problems.
 4. **Planning**  [[`Implementation`](04_planning.ipynb)]<br>Proactively decomposes a complex task into a detailed, step-by-step plan before execution, ensuring a structured and traceable workflow.
+5. **Mult-Agent Systems** [[`Implementation`](05_multi_agent.ipynb)]<br>A team of specialized agents collaborates to solve a problem, dividing labor to achieve superior depth, quality, and structure in the final output.
 
 <sub><i>More architectures and experiments will be added over time !</i></sub>
 
