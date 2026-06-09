@@ -1,22 +1,81 @@
-## Agentic Architectures Design
+<div align="center">
 
-This repository is a collection of state-of-the-art agentic design patterns, from single-agent enhancements to complex, collaborative and self-improving systems, built with LangChain and LangGraph. OpenRouter is used for LLM inference and access to open-source models, Tavily is used for real-time web search and LangSmith is used for tracing, debugging, monitoring, and evaluation of agentic patterns. All the architectures are implemented end-to-end in runnable Jupyter notebooks.
+# Agentic Architectures Design
 
-<p align="center" style="margin-bottom: -0.5rem;">
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=FFD43B" alt="Python" /></a> <a href="https://jupyter.org/"><img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter Notebook" /></a> <a href="https://github.com/astral-sh/uv"><img src="https://img.shields.io/badge/uv-DE5FE9?logo=uv&logoColor=white" alt="uv" /></a> <a href="https://www.langchain.com/"><img src="https://img.shields.io/badge/LangChain-1C3C3C?logo=LangChain&logoColor=white" alt="LangChain"/></a> <a href="https://www.langchain.com/langgraph"><img src="https://img.shields.io/badge/LangGraph-1C3C3C?logo=LangChain&logoColor=white" alt="LangGraph"/></a> <a href="https://www.langchain.com/langsmith"><img src="https://img.shields.io/badge/LangSmith-000000?logo=langchain&logoColor=white" alt="LangSmith"/></a> 
+**A collection of modern agentic AI architectures implemented from scratch using LangChain and LangGraph.**
+
+<p>
+<a href="#"><img src="https://img.shields.io/badge/Architectures%20%7C%205-F37606" alt="Architectures" /></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=FFD43B" alt="Python" /></a>
+<a href="https://www.langchain.com/"><img src="https://img.shields.io/badge/LangChain-1C3C3C?logo=LangChain&logoColor=white" alt="LangChain"/></a>
+<a href="https://www.langchain.com/langgraph"><img src="https://img.shields.io/badge/LangGraph-1C3C3C?logo=LangChain&logoColor=white" alt="LangGraph"/></a>
+<a href="https://www.langchain.com/langsmith"><img src="https://img.shields.io/badge/LangSmith-000000?logo=langchain&logoColor=white" alt="LangSmith"/></a>
+<a href="https://openrouter.ai/"><img src="https://img.shields.io/badge/OpenRouter-FF4F00?logo=openai&logoColor=white" alt="OpenRouter" /></a>
 </p>
+
+</div>
+
+
+<br>
 
 ## Worklog
 
-Running list of what's here ...
+| Architecture | Pattern | Description | Notebook |
+|----------|----------|------------|----------|
+| Reflection | Reasoning & Reflection | Iteratively critiques and improves its own outputs before returning a final answer. | [`01_reflection.ipynb`](01_reflection.ipynb) |
+| Tool Use | Tools & Actions | Extends agent capabilities through external tools and APIs. | [`02_tool_use.ipynb`](02_tool_use.ipynb) |
+| ReAct | Tools & Actions | Combines reasoning and tool execution in a dynamic feedback loop. | [`03_ReAct.ipynb`](03_ReAct.ipynb) |
+| Planning | Tools & Actions | Generates an execution plan before solving the task. | [`04_planning.ipynb`](04_planning.ipynb) |
+| Multi-Agent | Multi-Agent Systems | Coordinates multiple specialized agents to solve complex tasks collaboratively. | [`05_multi_agent.ipynb`](05_multi_agent.ipynb) |
 
-1. **Reflection**  [[`Implementation`](01_reflection.ipynb)]<br>Moves from a single-pass generator to a deliberate, multi-step reasoner by critiquing and refining its own work.
-2. **Tool Use**  [[`Implementation`](02_tool_use.ipynb)]<br>Empowers an agent to overcome knowledge cutoffs and interact with the real world by calling external APIs and functions.
-3. **ReAct**  [[`Implementation`](03_ReAct.ipynb)]<br>Dynamically interleaves **Re**asoning ("thought") and **Act**ion ("tool use") in an adaptive loop to solve complex, multi-step problems.
-4. **Planning**  [[`Implementation`](04_planning.ipynb)]<br>Proactively decomposes a complex task into a detailed, step-by-step plan before execution, ensuring a structured and traceable workflow.
-5. **Mult-Agent Systems** [[`Implementation`](05_multi_agent.ipynb)]<br>A team of specialized agents collaborates to solve a problem, dividing labor to achieve superior depth, quality, and structure in the final output.
+<sub><i>[More architectures, experiments, and benchmarks will be added over time.]</i></sub>
 
-<sub><i>More architectures and experiments will be added over time !</i></sub>
+<br>
+
+## ToDo
+- [x] Reflection (Reasoning & Reflection)
+- [ ] Reflexion (Reasoning & Reflection)
+- [ ] Chain-of-Verification (Reasoning & Reflection)
+- [ ] Self-Discover (Reasoning & Reflection)
+- [ ] Constitutional AI (Reasoning & Reflection)
+
+- [ ] Self-Consistency (Sampling & Search)
+- [ ] Tree of Thoughts (Sampling & Search)
+- [ ] LATS (Sampling & Search)
+- [ ] Mental Loop (Sampling & Search)
+- [ ] Ensemble (Sampling & Search)
+
+- [ ] Agentic RAG (Retrieval)
+- [ ] Corrective RAG (Retrieval)
+- [ ] Self-RAG (Retrieval)
+- [ ] Adaptive RAG (Retrieval)
+- [ ] GraphRAG (Retrieval)
+
+- [ ] Episodic + Semantic (Memory)
+- [ ] Graph Memory (Memory)
+- [ ] MemGPT (Memory)
+- [ ] Voyager (Memory)
+- [ ] Agent Workflow Memory (Memory)
+
+- [x] Tool Use (Tools & Actions)
+- [x] ReAct (Tools & Actions)
+- [x] Planning (Tools & Actions)
+- [ ] Plan-Execute-Verify (PEV) (Tools & Actions)
+- [ ] SWE-Agent (Tools & Actions)
+- [ ] BrowserAgent (Tools & Actions)
+
+- [x] Multi-Agent (Multi-Agent Systems)
+- [ ] Blackboard (Multi-Agent Systems)
+- [ ] Debate (Multi-Agent Systems)
+- [ ] STORM (Multi-Agent Systems)
+- [ ] Meta-Controller (Multi-Agent Systems)
+
+- [ ] Dry-Run (Safety & Routing)
+- [ ] Reflexive Metacognitive (Safety & Routing)
+- [ ] Computer Use (Safety & Routing)
+
+- [ ] RLHF Self-Improvement (Specialty)
+- [ ] Cellular Automata (Specialty)
 
 
 
